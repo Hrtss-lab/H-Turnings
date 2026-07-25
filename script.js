@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- inject config text (only fills what exists on this page) ---------- */
   if (typeof CONFIG !== 'undefined') {
-    document.querySelectorAll('#recipientName').forEach(el => el.textContent = CONFIG.name);
     if ($('#welcomeHeading')) $('#welcomeHeading').innerHTML = CONFIG.welcomeHeading;
     if ($('#welcomeMessage')) $('#welcomeMessage').textContent = CONFIG.welcomeMessage;
     if ($('#giftMessage')) $('#giftMessage').dataset.text = CONFIG.giftMessage;
