@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- inject config text (only fills what exists on this page) ---------- */
   if (typeof CONFIG !== 'undefined') {
     if ($('#welcomeHeading')) $('#welcomeHeading').innerHTML = CONFIG.welcomeHeading;
-    if ($('#welcomeMessage')) $('#welcomeMessage').textContent = CONFIG.welcomeMessage;
+    if ($('#welcomeMessage')) $('#welcomeMessage').innerHTML = CONFIG.welcomeMessage;
     if ($('#giftMessage')) $('#giftMessage').dataset.text = CONFIG.giftMessage;
     document.title = `Happy Birthday, ${CONFIG.name}`;
   }
