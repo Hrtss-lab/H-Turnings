@@ -15,7 +15,7 @@ const CONFIG = {
   welcomeMessage: "It's only safe to say, another year of moments only you could have lived.",
 
   // gift.html — revealed once the gift is opened
-  giftMessage: "This isn't the gift. Just a reminder that somewhere in sb's, someone thought of you today.",
+  giftMessage: "This isn't the gift. Just a reminder, that somewhere in sb's, someone thought of you today.",
 
   // Number of candles on the cake (final.html)
   candles: 5
