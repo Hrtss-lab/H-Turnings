@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       setTimeout(() => {
         if (giftMessage) {
-          giftMessage.textContent = giftMessage.dataset.text;
+          giftMessage.innerHTML = giftMessage.dataset.text;
           giftMessage.classList.add('shown');
         }
         if (giftContinue) giftContinue.classList.add('shown');
