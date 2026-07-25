@@ -7,15 +7,15 @@
 
 const CONFIG = {
   // Shown in the welcome page heading
-  name: "Someone",
+  name: "Nimo",
 
   // index.html — the welcome page heading (before the name) and message.
   // Use <br> inside welcomeHeading if you want a manual line break.
   welcomeHeading: "Hey you",
-  welcomeMessage: "It's another year of moments only you could have lived.",
+  welcomeMessage: "It's only safe to say, another year of moments only you could have lived.",
 
   // gift.html — revealed once the gift is opened
-  giftMessage: "This isn't the gift. The gift is that someone thought of you today.",
+  giftMessage: "This isn't the gift. Just a reminder that somewhere in sb's, someone thought of you today.",
 
   // Number of candles on the cake (final.html)
   candles: 5
