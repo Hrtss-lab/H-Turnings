@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="gift">
+
+<div id="loader">
+  <div class="loader-line"></div>
+  <p class="loader-text">Loading</p>
+</div>
+
+<nav class="dots" id="navDots" aria-hidden="true"></nav>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<main>
+  <section class="scene" id="gift">
+    <div class="stars stars-dim"></div>
+    <h2 class="serif section-title fade-in">A little something</h2>
+
+    <div class="gift-box" id="giftBox" role="button" tabindex="0" aria-label="Open gift">
+      <div class="gift-glow"></div>
+      <svg viewBox="0 0 200 200" width="180" height="180" class="gift-svg">
+        <defs>
+          <linearGradient id="boxGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#6FA5FF"/>
+            <stop offset="100%" stop-color="#1E4ED8"/>
+          </linearGradient>
+          <linearGradient id="ribbonGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#F5FAFF"/>
+            <stop offset="100%" stop-color="#A8D8FF"/>
+          </linearGradient>
+        </defs>
+        <g class="gift-lid">
+          <rect x="30" y="55" width="140" height="30" rx="6" fill="url(#ribbonGrad)"/>
+          <rect x="90" y="45" width="20" height="40" fill="url(#ribbonGrad)"/>
+          <path class="bow" d="M100 50 C 80 30, 55 35, 65 55 C 75 65, 90 58, 100 50 Z" fill="#F5FAFF"/>
+          <path class="bow" d="M100 50 C 120 30, 145 35, 135 55 C 125 65, 110 58, 100 50 Z" fill="#F5FAFF"/>
+        </g>
+        <g class="gift-body">
+          <rect x="35" y="90" width="130" height="90" rx="8" fill="url(#boxGrad)"/>
+          <rect x="90" y="90" width="20" height="90" fill="url(#ribbonGrad)" opacity="0.9"/>
+        </g>
+      </svg>
+      <div class="gift-burst" id="giftBurst"></div>
+    </div>
+    <p class="gift-reveal-text" id="giftMessage"></p>
+    <a class="icon-btn nav-link hidden-until-ready" id="giftContinue" href="final.html" aria-label="Continue">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="var(--sky)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+</main>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

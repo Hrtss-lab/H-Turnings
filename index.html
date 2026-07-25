@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="welcome">
+
+<div id="loader">
+  <div class="loader-line"></div>
+  <p class="loader-text">Loading</p>
+</div>
+
+<nav class="dots" id="navDots" aria-hidden="true"></nav>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<main>
+  <section class="scene" id="welcome">
+    <div class="aurora"></div>
+    <div class="stars"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+
+    <div class="glass-card fade-in">
+      <svg class="mark" viewBox="0 0 64 64" width="34" height="34"><path d="M32 6c3 8 6 11 14 14-8 3-11 6-14 14-3-8-6-11-14-14 8-3 11-6 14-14z" fill="var(--sky)" opacity="0.9"/></svg>
+      <h1 class="serif"><span id="welcomeHeading">A moment,<br>just for</span> <span id="recipientName">you</span></h1>
+      <p class="lede" id="welcomeMessage"></p>
+      <a class="icon-btn nav-link" href="gift.html" aria-label="Begin">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="var(--sky)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

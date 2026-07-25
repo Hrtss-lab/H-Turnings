@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="final">
+
+<div id="loader">
+  <div class="loader-line"></div>
+  <p class="loader-text">Loading</p>
+</div>
+
+<nav class="dots" id="navDots" aria-hidden="true"></nav>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<main>
+  <section class="scene scene-dark" id="final">
+    <div class="hearts" id="heartsField"></div>
+    <div class="cake fade-in">
+      <svg viewBox="0 0 220 180" width="220" height="180">
+        <defs>
+          <linearGradient id="cakeGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#DCEBFF"/>
+            <stop offset="100%" stop-color="#4F8EF7"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="110" cy="165" rx="95" ry="10" fill="#0B1E45"/>
+        <rect x="35" y="95" width="150" height="60" rx="10" fill="url(#cakeGrad)"/>
+        <path d="M35 100 q10 -12 20 0 q10 -12 20 0 q10 -12 20 0 q10 -12 20 0 q10 -12 20 0 q10 -12 20 0 q10 -12 10 0 v20 h-150 z" fill="#F5FAFF" opacity="0.85"/>
+        <g id="candleGroup"></g>
+      </svg>
+    </div>
+    <h2 class="serif section-title fade-in">Happy Birthday</h2>
+    <button class="icon-btn" id="celebrateBtn" aria-label="Celebrate">
+      <svg width="20" height="20" viewBox="0 0 40 40" fill="none"><path d="M20 4c2 7 5 10 12 12-7 2-10 5-12 12-2-7-5-10-12-12 7-2 10-5 12-12z" fill="var(--sky)" opacity="0.9"/></svg>
+    </button>
+  </section>
+</main>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
