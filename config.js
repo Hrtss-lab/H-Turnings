@@ -12,7 +12,7 @@ const CONFIG = {
   // index.html — the welcome page heading (before the name) and message.
   // Use <br> inside welcomeHeading if you want a manual line break.
   welcomeHeading: "Hey you",
-  welcomeMessage: "There's more significance in today than I'd know how to say,<br> but it's another year of moments only you could have lived.<br>And just how much your life continues to matter.",
+  welcomeMessage: "There's more significance in today than I'd know how to say.<br>It's another year of moments only you could have lived.<br>And just how much your life continues to matter.",
 
   // gift.html — revealed once the gift is opened
   giftMessage: "Not that it's the gift.<br>Only evidence that someone thought of you today.",
